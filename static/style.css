@@ -1,0 +1,53 @@
+/* Стили для всей страницы: выравнивание по центру */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Стили для контейнера, чтобы элементы не растягивались на весь экран */
+.container {
+    max-width: 800px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* Изменяем шрифт тега h1 */
+h1 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 3rem;
+    color: #a78bfa;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
+}
+
+/* Изменяем размер тега p */
+p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+/* Стили для изображения, чтобы оно выглядело аккуратно */
+.rocket-img {
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(167, 139, 250, 0.6));
+    transition: transform 0.3s ease;
+}
+
+.rocket-img:hover {
+    transform: scale(1.1);
+}
